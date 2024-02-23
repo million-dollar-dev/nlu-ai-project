@@ -25,14 +25,7 @@ public class GA {
 		}
 	}
 	
-	
-	public void show() {
-		for (Gen gen : population) {
-			System.out.println(gen.toString() + ": " + gen.getFitness());
-		}
-		System.out.println("-----------------------------------");
-	}
-	
+		
 	public void execute() {
 		List<Gen> newPopulation = new ArrayList<>();
 		for (int i = 0; i < population_size; i++) {

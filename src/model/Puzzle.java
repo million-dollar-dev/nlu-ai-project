@@ -59,8 +59,8 @@ public class Puzzle {
 				bestFitness += gens[i].getFitness();
 				worstFitness += gas[i].getWorstSolution().getFitness();
 			}
-//			bestFitness = (int) Math.pow(bestFitness, 1.0 / 2);
-//			worstFitness = (int) Math.pow(worstFitness, 1.0 / 2);
+//			bestFitness = (int) Math.pow(bestFitness, 2);
+//			worstFitness = (int) Math.pow(worstFitness, 2);
 			convertGenToTiles();
 			GameView.gameGrid.repaintGrid(getTiles());
 			GameView.addChartData(bestFitness, "Best finess", iterator);
